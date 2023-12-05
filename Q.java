@@ -24,7 +24,7 @@ public class Q {
 				area = (end-start) * (Math.min(list.get(start),list.get(end)));
 				max = Math.max(area, max);
 				if(start<end) {start++;}
-				else if(start>=end) {end++;}
+				else if(start>=end) {end--;}
 			}
 			return max;
 		}
